@@ -661,7 +661,6 @@ else:
         "Show total purchase order value by organization.",
         "Which supplier has the highest requisition amount?",
         "How many active purchase orders are there?",
-        "What is the average requisition approval lead time?",
         "Which supplier has the minimum and maximum PO delivery rate?",
         "Which buyer has the least and highest PO approval duration?",
         "What are the top 5 suppliers based on purchase order amount?"
