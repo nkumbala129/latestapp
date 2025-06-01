@@ -639,16 +639,16 @@ else:
 
     # --- Main UI and Query Processing ---
     # Set up main interface with fixed header, semantic model display, and chat input.
-    with st.container():
-        st.markdown(
-            """
-            <div class="fixed-header">
-                <h1 style="color: #29B5E8; margin-bottom: 5px;">   Cortex AI-Procurement Assistant by DiLytics</h1>
-                <p style='font-size: 16px; color: #333;'><strong>Welcome to Cortex AI. I am here to help with Dilytics Procurement Insights Solutions</strong></p>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+with st.container():
+    st.markdown(
+        """
+        <div class="fixed-header">
+            <h1 style="color: #29B5E8; margin-bottom: 5px;">Cortex AI-Procurement Assistant by DiLytics</h1>
+            <p style="font-size: 16px; color: #333;"><strong>Welcome to Cortex AI. I am here to help with Dilytics Procurement Insights Solutions</strong></p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
     semantic_model_filename = SEMANTIC_MODEL.split("/")[-1]
     init_service_metadata()
 
