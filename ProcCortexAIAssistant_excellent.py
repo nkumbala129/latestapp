@@ -146,7 +146,7 @@ if st.session_state.authenticated:
 
 # --- Stream Text Function ---
 # Stream text output in chunks with a delay for a typewriter effect.
-def stream_text(text: str, chunk_size: int = 1, delay: float = 0.02):
+def stream_text(text: str, chunk_size: int = 1, delay: float = 0.01):
     for i in range(0, len(text), chunk_size):
         yield text[i:i + chunk_size]
         time.sleep(delay)
