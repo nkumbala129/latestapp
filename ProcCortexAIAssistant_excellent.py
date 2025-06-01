@@ -643,7 +643,7 @@ else:
         st.markdown(
             """
             <div class="fixed-header">
-                <h1 style='color: #29B5E8; margin-bottom: 5px;'>   Cortex AI-Procurement Assistant by DiLytics</h1>
+                <h1 style="color: #29B5E8; margin-bottom: 5px;">   Cortex AI-Procurement Assistant by DiLytics</h1>
                 <p style='font-size: 16px; color: #333;'><strong>Welcome to Cortex AI. I am here to help with Dilytics Procurement Insights Solutions</strong></p>
             </div>
             """,
