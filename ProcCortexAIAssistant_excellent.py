@@ -84,8 +84,6 @@ if "rerun_trigger" not in st.session_state:
     st.session_state.rerun_trigger = False
 
 # --- CSS Styling ---
-# Apply custom CSS to hide Streamlit branding, prevent chat message shading, disable copy buttons,
-# position the Dilytics logo, and style the fixed header.
 st.markdown("""
 <style>
 #MainMenu, header, footer {visibility: hidden;}
@@ -107,7 +105,6 @@ st.markdown("""
 .copy-button, [data-testid="copy-button"], [title="Copy to clipboard"], [data-testid="stTextArea"] {
     display: none !important;
 }
-/* Style for the Dilytics logo in the top-right corner */
 .dilytics-logo {
     position: fixed;
     top: 10px;
@@ -116,21 +113,25 @@ st.markdown("""
     width: 150px;
     height: auto;
 }
-/* Style for the fixed header container */
 .fixed-header {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0; /* Extended to full width, behind the logo */
-    z-index: 999; /* Slightly below logo to ensure logo remains visible */
-    background-color: #ffffff; /* White background */
+    right: 0;
+    z-index: 999;
+    background-color: #ffffff;
     padding: 10px;
-    #border-bottom: 1px solid #ddd;
     text-align: center;
+    pointer-events: none; /* Disable hover interactions */
 }
-/* Add padding to main content to avoid overlap with fixed header */
+.fixed-header a {
+    pointer-events: none !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: default !important;
+}
 .stApp {
-    padding-top: 100px; /* Adjust based on header height */
+    padding-top: 100px;
 }
 </style>
 """, unsafe_allow_html=True)
