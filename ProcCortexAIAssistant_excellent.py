@@ -116,7 +116,7 @@ st.markdown("""
 .fixed-header {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 10;
     right: 0;
     z-index: 999;
     background-color: #ffffff;
